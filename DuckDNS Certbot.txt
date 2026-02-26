@@ -14,9 +14,10 @@ sleep 60
 # Cấp quyền: chmod +x certbot.sh
 
 3. Tạo chứng chỉ 
-sudo certbot certonly --manual --preferred-challenges dns --manual-auth-hook ./cerrtbot.sh -d example.duckdns.org
+sudo certbot certonly --manual --preferred-challenges dns --manual-auth-hook ./certbot.sh -d example.duckdns.org
 
 4. Bạn có thể dùng chứng chỉ để sử dụng
 
 Renew certificate: 
-sudo certbot renew --manual-auth-hook ./duckdns-auth.sh
+
+sudo certbot renew --manual-auth-hook ./certbot.sh
