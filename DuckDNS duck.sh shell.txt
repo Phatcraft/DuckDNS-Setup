@@ -8,7 +8,8 @@ ip=$(hostname -I)
 domain="<domain>"
 token="<token>"
 
-echo url="https://www.duckdns.org/update?domains=$domain&token=$token&ip=" | curl -k -K -
+echo url="https://www.duckdns.org/update?domains=$domain&token=$token&ip=$ip" | curl -k -K -
 
 3. Cấp quyền execute
 $ sudo chmod +x duck.sh
+
