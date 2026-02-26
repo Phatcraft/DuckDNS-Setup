@@ -76,7 +76,7 @@ $ sudo systemctl start DuckDNS
 Vậy là DuckDNS Update Service đã hoàn thành!!<br>
 Từ giờ, việc cập nhật IP đã tự động hoàn toàn.
 
-#### 3. Setup Certbot
+### 3. Setup Certbot
 Đối với các dịch vụ HTTPS, FTPS hoặc các dịch vụ cần certificate, việc tạo 1 certificate cho DuckDNS domain là cần thiết
 
 Đầu tiên, setup certbot vào server của bạn.
