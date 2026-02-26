@@ -1,4 +1,6 @@
-1. Create file /etc/systemd/system/DuckDNS.service
+1. Thêm file /etc/systemd/system/DuckDNS.service
+
+2. Thêm nội dung file
 
 [Unit]
 Description=DuckDNS Update Service
@@ -13,7 +15,7 @@ RemainAfterExit=no
 [Install]
 WantedBy=multi-user.target
 
-2. After create service, reload service daemon, start and enable DuckDNS Service
+3. Sau khi tạo file, reload daemon, start và enable DuckDNS service
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable DuckDNS
 $ sudo systemctl start DuckDNS
