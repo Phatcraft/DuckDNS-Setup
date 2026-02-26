@@ -7,7 +7,7 @@ Wants=network-online.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash /home/phatcraft/duckdns/duck.sh
+ExecStart=/bin/bash /home/<username>/duckdns/duck.sh
 RemainAfterExit=no
 
 [Install]
