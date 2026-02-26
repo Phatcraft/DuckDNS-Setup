@@ -1,0 +1,22 @@
+1. Tải certbot và lấy token trên trang chủ DuckDNS
+2. Tạo file shell certbot.sh
+
+Nội dung file
+#!/bin/bash
+
+DOMAIN="_acme-challenge.example.duckdns.org"
+TOKEN="YOUR_DUCKDNS_TOKEN"
+
+curl -s "https://www.duckdns.org/update?domains=example&token=$TOKEN&txt=$CERTBOT_VALIDATION"
+sleep 60
+
+# Thay TOKEN và DuckDNS domain
+# Cấp quyền: chmod +x certbot.sh
+
+3. Tạo chứng chỉ 
+sudo certbot certonly --manual --preferred-challenges dns --manual-auth-hook ./cerrtbot.sh -d example.duckdns.org
+
+4. Bạn có thể dùng chứng chỉ để sử dụng
+
+Renew certificate: 
+sudo certbot renew --manual-auth-hook ./duckdns-auth.sh

@@ -1,0 +1,19 @@
+1. Create file /etc/systemd/system/DuckDNS.service
+
+[Unit]
+Description=DuckDNS Update Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/phatcraft/duckdns/duck.sh
+RemainAfterExit=no
+
+[Install]
+WantedBy=multi-user.target
+
+2. After create service, reload service daemon, start and enable DuckDNS Service
+$ sudo systemctl daemon-reload
+$ sudo systemctl enable DuckDNS
+$ sudo systemctl start DuckDNS
