@@ -26,7 +26,7 @@ WantedBy=multi-user.target
 Bạn cần restart `systemd`, start và enable DuckDNS Update Service
 + Restart `systemd`
 ````
-$sudo systemd daemon-reload
+$ sudo systemd daemon-reload
 ````
 
 + Enable và start service
