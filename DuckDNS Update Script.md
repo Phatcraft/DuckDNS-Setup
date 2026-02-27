@@ -23,8 +23,8 @@ token="<token>"
 echo url="https://www.duckdns.org/update?domains=$domain&token=$token&ip=$ip" | curl -k -K -
 ````
 Trong đó:
-+ `domain` là DuckDNS domain với cấu trúc *domain*.duckdns.org
-+ `token` là token đươc cấp cho mỗi tài khoản trên [DuckDNS](https://www.duckdns.org)
++ `<domain>` là DuckDNS domain với cấu trúc *domain*.duckdns.org
++ `<token>` là token đươc cấp cho mỗi tài khoản trên [DuckDNS](https://www.duckdns.org)
 
 > [!WARNING]
 > Bạn có thể để file ở bất kỳ `path` nào bạn muốn<br>
