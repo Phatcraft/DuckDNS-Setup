@@ -39,7 +39,7 @@ Bạn cần renew chứng chỉ để sử dụng bình thường.
 
 Bạn có thể renew thông qua certbot
 ````bash
-sudo certbot renew --manual-auth-hook ./certbot.sh
+$ sudo certbot renew --manual-auth-hook ./certbot.sh
 ````
 
 ## 5. Hoàn thành
