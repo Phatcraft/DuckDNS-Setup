@@ -39,4 +39,4 @@ $ sudo chmod +x duck.sh
 ## 3. Hoàn thành
 Vậy là bạn đã hoàn thành việc setup DuckDNS và Update IP script<br>
 Bạn có thể test thử nhằm đảm bảo mọi thứ hoạt động.<br>
-[<- Trở lại]()
+[<- Trở lại](https://github.com/Phatcraft/DuckDNS-Setup/tree/main#readme)
