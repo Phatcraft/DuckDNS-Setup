@@ -17,10 +17,15 @@ Tạo file `/home/*username*/duckdns/duck.sh` với nội dung sau
 #!/bin/bash
 
 ip=$(hostname -I | awk '{print $1}')
+ip6=$(hostname -I | awk '{print $2}')
 domain="<domain>"
 token="<token>"
 
+# Get Ipv4
 echo url="https://www.duckdns.org/update?domains=$domain&token=$token&ip=$ip" | curl -k -K -
+
+# Get Ipv6
+echo url="https://www.duckdns.org/update?domains=$domain&token=$token&ipv6=$ip6" | curl -k -K -
 ````
 Trong đó:
 + `<domain>` là DuckDNS domain với cấu trúc `<domain>.duckdns.org`
