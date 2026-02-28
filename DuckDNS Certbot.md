@@ -34,7 +34,7 @@ Từ giờ, bạn có thể dùng chứng chỉ cho các dịch vụ cần SSL.<
 Chứng chỉ này đã được công nhận bởi Let's Encrypt và đều được công nhận bởi tất cả các browser hiện nay.
 
 ## 4. Renew chứng chỉ
-Dù chứng chỉ này đã được công nhận, thời hạn của chứng chỉ này chỉ kéo dài khoảng 2 tháng.<br>
+Dù chứng chỉ này đã được công nhận, thời hạn của chứng chỉ này chỉ kéo dài khoảng 3-4 tháng.<br>
 Bạn cần renew chứng chỉ để sử dụng bình thường.
 
 Bạn có thể renew thông qua certbot
