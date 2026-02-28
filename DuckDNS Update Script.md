@@ -16,7 +16,7 @@ Tạo file `/home/*username*/duckdns/duck.sh` với nội dung sau
 ````bash
 #!/bin/bash
 
-ip=$(hostname -I)
+ip=$(hostname -I | awk '{print $1}')
 domain="<domain>"
 token="<token>"
 
