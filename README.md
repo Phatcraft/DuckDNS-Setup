@@ -9,7 +9,6 @@ Bạn có thể xem hướng dẫn này nhằm setup DuckDNS domain cho server c
 
 ## Hướng dẫn cụ thể
 + [Setup DuckDNS và Update IP script](https://github.com/Phatcraft/DuckDNS-Setup/blob/main/DuckDNS%20Update%20Script.md)
-+ [Setup DuckDNS Update Service (Optional)](https://github.com/Phatcraft/DuckDNS-Setup/blob/main/DuckDNS%20Update%20Service.md)
 + [Setup DuckDNS và Certbot certificate](https://github.com/Phatcraft/DuckDNS-Setup/blob/main/DuckDNS%20Certbot.md)
 
 Chúc bạn may mắn,<br>
