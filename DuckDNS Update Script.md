@@ -22,11 +22,8 @@ ipv6=$(hostname -I | awk '{print $2}')
 domain="<domain>"
 token="<token>"
 
-# Get Ipv4
-echo url="https://www.duckdns.org/update?domains=$domain&token=$token&ip=$ip" | curl -k -K -
-
-# Get Ipv6
-echo url="https://www.duckdns.org/update?domains=$domain&token=$token&ipv6=$ipv6" | curl -k -K -
+printf "Updating IP... "
+echo url="https://www.duckdns.org/update?domains=$domain&token=$token&ip=$ip&ipv6=$ipv6" | curl -k -K -
 ````
 Trong đó:
 + `<domain>` là DuckDNS domain với cấu trúc `<domain>.duckdns.org`
