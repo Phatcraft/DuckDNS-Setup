@@ -35,3 +35,9 @@ ExecStart=/bin/bash <path>
 [Install]
 WantedBy=multi-user.target
 ````
+## 4. Chạy script
+````
+sudo systemctl daemon-reload
+sudo systemctl enable AutoDuck
+sudo systemctl start AutoDuck
+````
