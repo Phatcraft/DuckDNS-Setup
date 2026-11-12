@@ -27,7 +27,7 @@ Trong đó:
 ## 3. Tạo chứng chỉ 
 Bạn có thể tạo chứng chỉ của Let's Encrypt
 ````bash
-$ sudo certbot certonly --manual --preferred-challenges dns --manual-auth-hook ./certbot.sh -d example.duckdns.org
+sudo certbot certonly --manual --preferred-challenges dns --manual-auth-hook ./certbot.sh -d example.duckdns.org
 ````
 > Bạn cần thay đổi domain thành DuckDNS domain của bạn
 
@@ -40,8 +40,9 @@ Bạn cần renew chứng chỉ để sử dụng bình thường.
 
 Bạn có thể renew thông qua certbot
 ````bash
-$ sudo certbot renew --manual-auth-hook ./certbot.sh
+sudo certbot renew --manual-auth-hook ./certbot.sh
 ````
+(Đối với 1 số bản certbot đã hỗ trợ tự động renew)
 
 ## 5. Hoàn thành
 Vậy là bạn đã hoàn thành việc tạo certificate cho server!!!
