@@ -27,8 +27,11 @@ Trong đó:
 
 > [!CAUTION]
 > Script này chỉ hoạt động ổn định cho Local IP nhưng vẫn chưa thử nghiệm đối với public IP
-
-## 3. Tạo chứng chỉ 
+## 3. Cấp quyền
+```
+sudo chmod +x certbot.sh
+```
+## 4. Tạo chứng chỉ 
 Bạn có thể tạo chứng chỉ của Let's Encrypt
 ````bash
 sudo certbot certonly --manual --preferred-challenges dns --manual-auth-hook ./certbot.sh -d example.duckdns.org
@@ -38,7 +41,7 @@ sudo certbot certonly --manual --preferred-challenges dns --manual-auth-hook ./c
 Từ giờ, bạn có thể dùng chứng chỉ cho các dịch vụ cần SSL.<br>
 Chứng chỉ này đã được công nhận bởi Let's Encrypt và đều được công nhận bởi tất cả các browser hiện nay.
 
-## 4. Renew chứng chỉ
+## 5. Renew chứng chỉ
 Dù chứng chỉ này đã được công nhận, thời hạn của chứng chỉ này chỉ kéo dài khoảng 3-4 tháng.<br>
 Bạn cần renew chứng chỉ để sử dụng bình thường.
 
@@ -48,5 +51,5 @@ sudo certbot renew --manual-auth-hook ./certbot.sh
 ````
 (Đối với 1 số bản certbot đã hỗ trợ tự động renew)
 
-## 5. Hoàn thành
+## 6. Hoàn thành
 Vậy là bạn đã hoàn thành việc tạo certificate cho server!!!
