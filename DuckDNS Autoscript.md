@@ -3,7 +3,12 @@
 > [!CAUTION]
 > Hướng dẫn này chỉ áp dụng được cho IPv4, không áp dụng được cho IPv6.
 
-## 1. Tạo script `autoduck.sh`
+## 1. Tải script `autoduck.sh`
+Tải script thông qua curl:
+```
+curl -LO https://raw.githubusercontent.com/Phatcraft/DuckDNS-Setup/refs/heads/main/scripts/autoduck.sh
+```
+Nội dung file
 ````
 #!/bin/bash
 
