@@ -5,8 +5,12 @@ Việc tạo certificate cho phép dùng cho các dịch vụ cần SSL (HTTPS, 
 ## 1. Cài đặt Certbot
 Bạn cần cài đặt Certbot thông qua các package `apt` hoặc `dnf`
 
-## 2. Tạo file `certbot.sh`
+## 2. Tải file `certbot.sh`
 File này được tạo ra nhằm hỗ trợ việc tạo certificate bằng DNS Challenge.<br>
+Tải file thông qua curl:
+```
+curl -LO https://raw.githubusercontent.com/Phatcraft/DuckDNS-Setup/refs/heads/main/scripts/certbot.sh
+```
 Nội dung file:
 ````bash
 #!/bin/bash
